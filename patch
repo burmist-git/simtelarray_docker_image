@@ -1,0 +1,11 @@
+--- corsika7.7_simtelarray_2020-06-28_patch/sim_telarray/LightEmission/Makefile	2022-11-21 17:18:45.000000000 +0100
++++ corsika7.7_simtelarray_2020-06-28/sim_telarray/LightEmission/Makefile	2020-06-18 03:32:14.000000000 +0200
+@@ -164,7 +164,7 @@
+ $(PROGRAMS): lib/libLightEmission.so
+ 
+ %: %.cc
+-	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(SOEXEFLAGS) -o $@ $< -lLightEmission
++	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(SOEXEFLAGS) -o $@ $<
+ else
+ 
+ %: %.cc $(SOURCES) $(HEADERS) $(LIBRARIES)

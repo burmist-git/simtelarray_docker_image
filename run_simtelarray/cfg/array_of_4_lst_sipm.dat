@@ -1,0 +1,4 @@
+# Defines what telescope to trigger and you also can assign a width window between telescopes in nanosecond if wanted
+
+# For Stereo and only LSTs
+Trigger 1 of 1, 2, 3, 4 width 1000
